@@ -1,0 +1,34 @@
+{
+    "accounts":[
+        {
+            "name": "ram",
+            "account_number": 56921300000091,
+            "phone_number": 9841989891
+        },
+        {
+            "name": "shyam",
+            "account_number": 56921300000092,
+            "phone_number": 9841989892
+        },
+        {
+            "name": "hari",
+            "account_number": 56921300000093,
+            "phone_number": 9841989893
+        },
+        {
+            "name": "sita",
+            "account_number": 56921300000094,
+            "phone_number": 9841989894
+        },
+        {
+            "name": "gita",
+            "account_number": 56921300000095,
+            "phone_number": 9841989895
+        },
+        {
+            "name": "lita",
+            "account_number": 56921300000096,
+            "phone_number": 9841989896
+        }
+    ]
+}
