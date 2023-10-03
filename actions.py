@@ -13,7 +13,7 @@ class ActionCheckExistence(Action):
     knowledge = Path("data/account-number.txt").read_text().split("\n")
 
     def name(self) -> Text:
-        return "action_get_balance"
+        return "utter_account_balance"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,

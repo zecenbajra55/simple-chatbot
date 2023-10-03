@@ -23,7 +23,6 @@ stories:
   - action: utter_ask_phone_number
   - intent: phone_num
 #  - action: utter_getting_account_balance
-  - action: action_get_balance
   - action: utter_account_balance
   - action: utter_goodbye
 
@@ -40,7 +39,6 @@ stories:
   - action: utter_ask_phone_number
   - intent: phone_num
 #  - action: utter_getting_account_balance
-  - action: action_get_balance
   - action: utter_account_balance
   - action: utter_goodbye
 
@@ -59,5 +57,107 @@ stories:
   - intent: transaction_history
   - action: utter_ask_account_number
   - intent: account_num
+  - action: utter_getting_transaction_history
+  - action: utter_goodbye
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: account_balance
+  - action: utter_ask_name
+  - intent: name
+    entities:
+    - name: ram
+  - slot_was_set:
+    - name: ram
+  - action: utter_ask_account_number
+  - intent: phone_num
+    entities:
+    - phone_number: '56921300000091'
+  - slot_was_set:
+    - phone_number: '56921300000091'
+  - intent: account_num
+    entities:
+    - account_number: '56921300000091'
+  - intent: phone_num
+    entities:
+    - phone_number: '56921300000091'
+  - slot_was_set:
+    - phone_number: '56921300000091'
+  - intent: account_num
+    entities:
+    - account_number: '56921300000091'
+  - action: utter_ask_phone_number
+  - action: utter_ask_phone_number
+  - intent: phone_num
+    entities:
+    - phone_number: '9841989891'
+  - slot_was_set:
+    - phone_number: '9841989891'
+  - action: action_get_balance
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: account_balance
+  - action: utter_ask_name
+  - intent: name
+    entities:
+    - name: ram
+  - slot_was_set:
+    - name: ram
+  - action: utter_ask_account_number
+  - intent: account_num
+    entities:
+    - account_number: '56921300000091'
+  - slot_was_set:
+    - account_number: '56921300000091'
+  - action: utter_ask_phone_number
+  - intent: phone_num
+    entities:
+    - phone_number: '9841989891'
+  - slot_was_set:
+    - phone_number: '9841989891'
+  - action: utter_account_balance
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: account_balance
+  - action: utter_ask_name
+  - intent: name
+    entities:
+    - name: shyam
+  - slot_was_set:
+    - name: shyam
+  - action: utter_ask_account_number
+  - intent: account_num
+    entities:
+    - account_number: '56921300000092'
+  - slot_was_set:
+    - account_number: '56921300000092'
+  - action: utter_ask_phone_number
+  - intent: phone_num
+    entities:
+    - phone_number: '9841989892'
+  - slot_was_set:
+    - phone_number: '9841989892'
+  - action: utter_account_balance
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: transaction_history
+  - action: utter_ask_account_number
+  - intent: account_num
+    entities:
+    - account_number: '56921300000091'
+  - slot_was_set:
+    - account_number: '56921300000091'
   - action: utter_getting_transaction_history
   - action: utter_goodbye

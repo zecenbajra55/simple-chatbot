@@ -15,7 +15,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: farewell
   examples: |
     - cu
@@ -28,7 +27,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: account_balance
   examples: |
     - what's my account balance
@@ -42,7 +40,7 @@ nlu:
     - i want to know my balance
     - get my balance
     - show me my balance
-
+    - can i check my balance
 - intent: transaction_history
   examples: |
     - show my transaction history
@@ -50,31 +48,30 @@ nlu:
     - my transaction history
     - show me my history
     - show me my transactions
-
 - intent: thanks
   examples: |
     - thanks
     - thank you
     - OK
-
 - intent: name
   examples: |
-    - [ram](name)
-    - [hari](name)
-    - [shyam](name)
-    - [sita](name)
-    - [gita](name)
-    - [lita](name)
-
+    - my name is [ram](name)
+    - my name is [hari](name)
+    - my name is [shyam](name)
+    - my name is [sita](name)
+    - my name is [gita](name)
+    - my name is [lita](name)
 - intent: account_num
   examples: |
+    - it is [56921300000091](account_number)
+    - it is[56921300000092](account_number)
+    - it is [56921300000093](account_number)
+    - it is [56921300000094](account_number)
+    - it is [56921300000095](account_number)
+    - it is [56921300000096](account_number)
     - [56921300000091](account_number)
-    - [56921300000092](account_number)
-    - [56921300000093](account_number)
-    - [56921300000094](account_number)
-    - [56921300000095](account_number)
-    - [56921300000096](account_number)
-
+    - it is [56921300000092](account_number)
+    - it is [56921300000091](account_number)
 - intent: phone_num
   examples: |
     - [9841989891](phone_number)

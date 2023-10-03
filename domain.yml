@@ -1,61 +1,46 @@
-version: "3.1"
-
+version: '3.1'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
 actions:
 - utter_ask_account_number
+- utter_account_balance
+- utter_ask_name
+- utter_greet
+- utter_goodbye
 - utter_ask_phone_number
 - action_get_balance
 - utter_welcome
-- utter_ask_name
-- utter_goodbye
-- utter_greet
 - utter_getting_transaction_history
 - action_get_transaction_history
-#- utter_getting_account_balance
-
 intents:
-- greet
-- farewell
 - account_balance
-- transaction_history
-- thanks
-- name
 - account_num
-- phone_num
-
-entities:
+- farewell
+- greet
 - name
-- account_number
+- phone_num
+- thanks
+- transaction_history
+entities:
 - phone_number
-
+- account_number
+- name
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
+  - text: Hey! How are you?
   utter_goodbye:
-  - text: "Good Bye"
-
+  - text: Good Bye
   utter_ask_name:
-  - text: "what is your name?"
-
+  - text: what is your name?
   utter_ask_phone_number:
-  - text: "what is your phone number?"
-
+  - text: what is your phone number?
   utter_ask_account_number:
-  - text: "what is your account number?"
-
-#  utter_getting_account_balance:
-#  - text: "Ok, getting balance of [account_number] ....."
-
+  - text: what is your account number?
   utter_account_balance:
-  - text: "Dear [name] your [account_number] has a balance of Rs. 1000"
-
+  - text: Dear {name} your {account_number} has a balance of Rs. 1000
   utter_getting_transaction_history:
-  - text: "there is no transaction history." 
-
+  - text: there is no transaction history.
 slots:
   name:
     type: text
