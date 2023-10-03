@@ -23,5 +23,8 @@ policies:
 - name: TEDPolicy
   max_history: 5
   epochs: 100
-- name: MappingPolicy
-assistant_id: 20231002-145416-fundamental-tributary
+- name: RulePolicy
+  nlu_threshold: 0.4
+  core_threshold: 0.4
+  fallback_action_name: 'action_default_fallback'
+assistant_id: 20231003-123335-radioactive-debit

@@ -1,0 +1,90 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: lets_start
+  examples: |
+    - lets see my account
+    - can i see my balance 
+
+- intent: account_balance
+  examples: |
+    - what's my account balance
+    - can i have my account balance
+    - how much balance is there in my account
+    - how much balance left
+    - how much money do i have
+    - can i get my balance
+    - i would like to know my balance
+    - tell me my balance
+    - i want to know my balance
+    - get my balance
+    - show me my balance
+
+- intent: transaction_history
+  examples: |
+    - show my transaction history
+    - can i see my transaction history
+    - my transaction history
+    - show me my history
+    - show me my transactions
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - OK
+
+- intent: name
+  examples: |
+    - ram
+    - hari
+    - shyam
+    - sita
+    - gita
+    - lita
+
+- intent: account_num
+  examples: |
+    - 56921300000091
+    - 56921300000092
+    - 56921300000093
+    - 56921300000094
+    - 56921300000095
+    - 56921300000096
+
+- intent: phone_num
+  examples: |
+    - 9841989891
+    - 9841989892
+    - 9841989893
+    - 9841989894
+    - 9841989895
+    - 9841989896

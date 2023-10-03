@@ -1,0 +1,39 @@
+version: "3.1"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  
+
+- story: farewell
+  steps: 
+  - intent: goodbye
+  - action: utter_goodbye 
+  
+
+- story: account balance
+  steps:
+  - intent: account_balance
+  - action: utter_ask_name 
+  - intent: name
+  - action: utter_ask_account_number
+  - intent: account_num
+  - action: utter_ask_phone_number
+  - intent: phone_num
+  - action: utter_getting_account_balance
+  - action: action_get_balance
+  - action: utter_account_balance
+  - action: utter_goodbye
+
+- story: transaction history
+  steps:
+  - action: utter_greet
+  - intent: transaction_history
+  - action: utter_ask_account_number
+  - intent: account_num
+  - action: utter_getting_transaction_history
+  - action: action_get_transaction_history
+  - action: utter_goodbye
