@@ -22,7 +22,7 @@ stories:
   - intent: account_num
   - action: utter_ask_phone_number
   - intent: phone_num
-  - action: utter_getting_account_balance
+#  - action: utter_getting_account_balance
   - action: action_get_balance
   - action: utter_account_balance
   - action: utter_goodbye
@@ -39,7 +39,7 @@ stories:
   - intent: account_num
   - action: utter_ask_phone_number
   - intent: phone_num
-  - action: utter_getting_account_balance
+#  - action: utter_getting_account_balance
   - action: action_get_balance
   - action: utter_account_balance
   - action: utter_goodbye

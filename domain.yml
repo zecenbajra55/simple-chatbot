@@ -14,6 +14,7 @@ actions:
 - utter_greet
 - utter_getting_transaction_history
 - action_get_transaction_history
+#- utter_getting_account_balance
 
 intents:
 - greet
@@ -46,8 +47,8 @@ responses:
   utter_ask_account_number:
   - text: "what is your account number?"
 
-  utter_getting_account_balance:
-  - text: "Ok, getting balance of [account_number] ....."
+#  utter_getting_account_balance:
+#  - text: "Ok, getting balance of [account_number] ....."
 
   utter_account_balance:
   - text: "Dear [name] your [account_number] has a balance of Rs. 1000"
@@ -62,12 +63,12 @@ slots:
     - type: from_entity
       entity: name
   account_number:
-    type: text
+    type: float
     mappings:
     - type: from_entity
       entity: account_number
   phone_number:
-    type: text
+    type: float
     mappings:
     - type: from_entity
       entity: phone_number
