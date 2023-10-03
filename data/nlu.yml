@@ -16,7 +16,7 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: goodbye
+- intent: farewell
   examples: |
     - cu
     - good by
@@ -28,11 +28,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
-- intent: lets_start
-  examples: |
-    - lets see my account
-    - can i see my balance 
 
 - intent: account_balance
   examples: |

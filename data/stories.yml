@@ -8,11 +8,10 @@ stories:
   - action: utter_greet
   
 
-- story: farewell
+- story: fare well
   steps: 
-  - intent: goodbye
+  - intent: farewell
   - action: utter_goodbye 
-  
 
 - story: account balance
   steps:
@@ -28,12 +27,37 @@ stories:
   - action: utter_account_balance
   - action: utter_goodbye
 
+  
+- story : greet+ account balance+ farewell
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: account_balance
+  - action: utter_ask_name 
+  - intent: name
+  - action: utter_ask_account_number
+  - intent: account_num
+  - action: utter_ask_phone_number
+  - intent: phone_num
+  - action: utter_getting_account_balance
+  - action: action_get_balance
+  - action: utter_account_balance
+  - action: utter_goodbye
+
 - story: transaction history
   steps:
+  - intent: transaction_history
+  - action: utter_ask_account_number
+  - intent: account_num
+  - action: utter_getting_transaction_history
+  - action: utter_goodbye
+
+- story: greet+ transaction history + farewell
+  steps:
+  - intent: greet
   - action: utter_greet
   - intent: transaction_history
   - action: utter_ask_account_number
   - intent: account_num
   - action: utter_getting_transaction_history
-  - action: action_get_transaction_history
   - action: utter_goodbye
